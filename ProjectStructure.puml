@@ -1,0 +1,31 @@
+@@startmindmap
+
+
+title Project Folder Structure
+* Root Folder 
+**  Build
+** public 
+*** index.html
+*** manifest.json
+** Assets 
+*** images 
+*** content
+** src
+
+*** jsx  
+**** pages
+***** <page_name>.jsx 
+**** components 
+***** <component_name>.jsx 
+**** utilities 
+***** class for each related functions 
+*** Php 
+**** php logic files (backend)
+*** styles 
+**** pages_style
+***** <page_name>.css
+**** components_style 
+***** <component_name>.css
+
+
+@@endmindmap
