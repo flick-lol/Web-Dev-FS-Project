@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import logo from "../../assets/logo.png";
 
 import React, { useState } from "react";
 import "./chat.css";
@@ -29,15 +28,18 @@ function ChatPage() {
           <div className="messages flex-column p-5">
             {messages.map((message, index) => (
               <>
-                <div class="message">
-                  <div class="message-content">
+                <div className="message">
+                  <div className="message-content">
                     <p>Hello! This is a received message.</p>
                   </div>
                 </div>
 
-                <div class="message message-sent">
-                  <div class="message-content">
-                    <p>Hi! This is a sent message.</p>
+                <div className="message message-sent">
+                  <div className="message-content">
+                    <p>Hi! This is a sent message.And I want to thank you really haaaaaaaaaaaaaaaaaaaaaaaa  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                      even when text is long it's working really fine
+                      yayayayaaaaaaaaaaaaaaaaaaa
+                    </p>
                   </div>
                 </div>
               </>

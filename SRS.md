@@ -59,3 +59,4 @@ Users must be able to create and manage their profile information.
 
 - The website will contain a **chat page** for the registred members to enable good quality communication. 
 
+- The chat services will also provide a section where the user can have a chat with a ChatBot (**Conversational AI**)

@@ -105,8 +105,8 @@ button:hover {
   border-style: solid;
   border-width: 15px 15px 0px 0px;
   border-color: #240046 transparent transparent transparent;
-  top: -15px;
-  left: 10px;
+  top: 0px;
+  left: 0px;
 }
 
 .message-content::after {
@@ -115,8 +115,10 @@ button:hover {
   border-style: solid;
   border-width: 15px 0px 0px 15px;
   border-color: #240046 transparent transparent transparent;
+  
   bottom: -15px;
-  right: 10px;
+  right: 12px;
+   
 }
 
 .message-sent .message-content {
@@ -126,16 +128,20 @@ button:hover {
 .message-sent .message-content::before {
   border-width: 0px 0px 15px 15px;
   border-color: transparent transparent #FF9100 transparent;
+  /*
   left: auto;
   right: 10px;
+  */
 }
 
 .message-sent .message-content::after {
   border-width: 0px 15px 15px 0px;
   border-color: transparent #FF9100 transparent transparent;
+  /*
   bottom: -15px;
   right: auto;
   left: 10px;
+  */
 }
 
 

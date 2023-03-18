@@ -1,5 +1,5 @@
 import logo from "../../assets/logo.png";
-import {React} from 'react';
+import {React,useState} from 'react';
 import {
   MDBBtn,
   MDBContainer,
@@ -9,23 +9,19 @@ import {
   ,MDBCard
 }
 from 'mdb-react-ui-kit';
+import {fields} from "./select/feilds";
+import { MySelect } from "./select/select";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
-import "./login.css"
+import "../login/login"
 import { NavBar } from "../../Components/NavBar/navbar";
-import { useNavigate } from "react-router-dom";
 
+export function Register() {
 
-
-export function Login() {
-  const navigate = useNavigate();
-  const goToRegister=()=>{
-
-    navigate("/register");
-  }
   return (
     <>
     <NavBar></NavBar>
+    <form >
     <MDBContainer className="my-5 gradient-form" >
        <MDBCard className='my-5' style={{borderRadius: '4rem'}}>
       <MDBRow>
@@ -38,23 +34,18 @@ export function Login() {
                 style={{width: '185px'}} alt={logo} />
             </div>
 
-            <p>Please login to your account</p>
-
+            <p>Please Enter your information</p>
+            <MDBInput className="mb-1" label='First Name' id='typeText' type='text' wrapperClass="mb-4" />
+            <MDBInput className="mb-1" label='Last Name' id='typeText' type='text' wrapperClass="mb-4"/>
             <MDBInput className="mb-1" label='email' id='typeText' type='email' wrapperClass="mb-4" />
-            <MDBInput className="mb-1" label='password' id='typeText' type='password' wrapperClass="mb-4"/>
+            <MySelect options={fields}></MySelect>
+            <MDBInput className="mb-1" label='password' id='typeText' type='password' wrapperClass="mb-4 mt-4"/>
           
           
             <div className="text-center pt-1 mb-5 pb-1 flex-column">
-              <MDBBtn className=" gradient-custom-2 mb-3" >Sign in</MDBBtn>
-              <div><a id="forget" className="text-muted" href="#!">Forgot password?</a></div>
+              <MDBBtn className=" gradient-custom-2 mb-3" type="submit" >Register</MDBBtn>
             </div>
-
-            <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
-              <p className="mb-0">Don't have an account?</p>
-              <button className="btn" onClick={goToRegister}>
-                Create an account
-              </button>
-            </div>
+            
 
           </div>
 
@@ -76,8 +67,12 @@ export function Login() {
         </MDBCol>
 
       </MDBRow>
+      
       </MDBCard>
     </MDBContainer>
+  
+
+    </form>
     </>
   );
 }
