@@ -50,3 +50,8 @@
 #forget:hover{
   color:#f18e14!important;
 }
+
+.centeredLogo {
+    display: flex;
+    justify-content: center;
+}

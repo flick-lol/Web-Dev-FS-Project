@@ -15,7 +15,7 @@ export function NavBar() {
           <a><Link to="/login"> Login/SignUp</Link></a>
         </li>
         <li>
-          <a href="#">Events</a>
+          <a> <Link to="/events">Events</Link></a>
         </li>
         <li>
           <a href="#"><Link to="/chat"> Chat</Link></a>
