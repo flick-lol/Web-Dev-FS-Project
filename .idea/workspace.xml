@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f81eef5-da81-47f7-9e03-e6571ce9ddac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/sntLogoOnly.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/events/Events.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/events/Events.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/events/EventsComponents/EventCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/events/EventsComponents/EventCardStyles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/events/EventsComponents/eventsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBar/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/events/EventsComponents/EventCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/events/EventsComponents/EventCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/events/EventsComponents/EventCardStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/events/EventsComponents/EventCardStyles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +73,7 @@
       <updated>1678267781799</updated>
       <workItem from="1678267782970" duration="2389000" />
       <workItem from="1679135302971" duration="1475000" />
-      <workItem from="1679136810793" duration="3096000" />
+      <workItem from="1679136810793" duration="3267000" />
     </task>
     <servers />
   </component>

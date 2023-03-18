@@ -1,19 +1,3 @@
-/*
-
-import "./EventCardStyles.css"
-export const EventCard = ({poster, description}) => {
-    return (
-        <div className="event-card">
-            <div className="poster">
-                <img src={poster} alt="Event poster" />
-            </div>
-            <div className="description">
-                <p>{description}</p>
-            </div>
-        </div>
-    );
-}*/
-
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBCardImage, MDBCol, MDBRow } from 'mdb-react-ui-kit';
 import "./EventCardStyles.css"
