@@ -8,7 +8,8 @@ import {
 }
     from 'mdb-react-ui-kit';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-
+import {FooterWave} from "../../Components/footer/footer";
+import "../../Components/footer/footer.css"
 
 export const Events = () => {
     return (
@@ -29,6 +30,8 @@ export const Events = () => {
                         )
                 )
             }
+            <FooterWave />
+
         </>
     )
 }
