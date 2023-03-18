@@ -60,3 +60,41 @@ export function Footer() {
     </footer>
   );
 }
+
+export const FooterWave = () => {
+    return (
+        <div className="wave-wrapper">
+            <Wave
+                fill="#FF9100"
+                id="wave"
+                paused={false}
+                options={{
+                    height: 20,
+                    amplitude: 20,
+                    speed: 0.15,
+                    points: 10,
+                }}
+            />
+
+            <div className="social flex justify-content-center">
+                <a href="#">
+                    <FontAwesomeIcon icon={faDiscord} size="2x" className="mx-5"/>
+                </a>
+                <a href="https://www.instagram.com/skillntell.club/?hl=en">
+                    <FontAwesomeIcon
+                        icon={faInstagram}
+                        size="2x"
+                        className="mx-5"
+                    ></FontAwesomeIcon>
+                </a>
+                <a href="https://www.linkedin.com/in/skill-and-tell-club-b5a051251/">
+                    <FontAwesomeIcon
+                        icon={faLinkedin}
+                        size="2x"
+                        className="mx-5"
+                    ></FontAwesomeIcon>
+                </a>
+            </div>
+        </div>
+    )
+}
