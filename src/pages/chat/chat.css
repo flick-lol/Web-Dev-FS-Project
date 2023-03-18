@@ -53,7 +53,7 @@ button:hover {
 .send-wrapper {
   width: 90%; /* for large screens */
   max-width: 500px; /* maximum width */
-  margin: 30px auto; /* centersend.send-wrapper field horizontally */
+  margin: 13px auto; /* centersend.send-wrapper field horizontally */
   position: relative;
   display: flex;
 }
@@ -88,6 +88,8 @@ button:hover {
   margin-bottom: 20px;
 }
 
+
+
 .message-content {
   padding: 10px 15px;
   border-radius: 15px;
@@ -98,18 +100,18 @@ button:hover {
   background-color: #240046;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
-
-.message-content::before {
+.message-received .message-content::before{
   content: '';
   position: absolute;
   border-style: solid;
   border-width: 15px 15px 0px 0px;
   border-color: #240046 transparent transparent transparent;
-  top: 0px;
-  left: 0px;
+  bottom: -15px;
+  left: 16px;
 }
 
-.message-content::after {
+
+.message-sent .message-content::after {
   content: '';
   position: absolute;
   border-style: solid;
@@ -118,11 +120,16 @@ button:hover {
   
   bottom: -15px;
   right: 12px;
+
    
 }
 
 .message-sent .message-content {
   background-color: #FF9100;
+  margin-left: 30%;
+  margin-right: 0px;
+
+  
 }
 
 .message-sent .message-content::before {

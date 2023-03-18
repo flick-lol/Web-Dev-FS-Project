@@ -10,6 +10,7 @@ import {
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import {FooterWave} from "../../Components/footer/footer";
 import "../../Components/footer/footer.css"
+import "./Events.css"
 
 export const Events = () => {
     return (
@@ -30,7 +31,11 @@ export const Events = () => {
                         )
                 )
             }
-            <FooterWave />
+              
+                <FooterWave pageName={"event"}></FooterWave>
+
+          
+            
 
         </>
     )

@@ -38,24 +38,24 @@ The website must be accessible to all registered students of the university.
 ## **3.1 External Interface Requirements**
 ### **3.1.1 User interfaces**
  #### The website will have a responsive and user-friendly UI (User Interface) that adapts to different screen sizes and devices. The website will have a consistent - visual design and navigation system across all pages. The website will have the following UI components:
-- <span style="color:red"> **Home Page:** </span>
+- <span style="color:cyan"> **Home Page:** </span>
   - an overview of the website's features and functions.
   - Story line of the Club where can be expanded to the **EVENT** pages
-- <span style="color:red">**Member's Profile**
+- <span style="color:cyan">**Member's Profile**
 </span> *Contains the following:*
     - User's details.
     - User's Activity & Recent Activities.
-- <span style="color:red">**Event Calendar Page**
+- <span style="color:cyan">**Event Calendar Page**
 </span> *Contains the following:*
     -  All the events done by the Club providing the following details for **each** event:
        -  The event's *Title*
        -  The event's *Description*
        -  The event's *Date*
        -  The event's *Poster*
-- <span style="color:red">**Discussion forum page(ChatApp Page)**
+- <span style="color:cyan">**Discussion forum page(ChatApp Page)**
 </span> 
     - Topic threads and reply functionality.
-- <span style="color:red">**Administration page**
+- <span style="color:cyan">**Administration page**
 </span> with CMS functionality for authorized administrators.
 
 ### **3.1.2 Software interfaces**

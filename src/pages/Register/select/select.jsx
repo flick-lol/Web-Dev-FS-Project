@@ -12,11 +12,11 @@ export const MySelect = ({options} ) => {
     defaultValue={selectedOption}
     onChange={setSelectedOption}
     options={options}
-    placeholder="your branch"
+    placeholder="Your Branch"
     theme={(theme) => ({
       ...theme,
       borderRadius: 10,
-      borderWidth:2,
+      
       colors: {
         ...theme.colors,
         primary25: '#FF9100',
@@ -27,6 +27,7 @@ export const MySelect = ({options} ) => {
       control:(basStyles,state)=>({
         ...basStyles,
         borderColor:state.isFocused ?"#FF9100":"#240046",
+        borderWidth:0,
         backgroundColor: state.isFocused? "#FF9100":"#240046",
         color: state.isFocused? "#240046":"#FF9100",
         cursor:state.isDisabled?'not-allowed':'pointer',
@@ -34,7 +35,7 @@ export const MySelect = ({options} ) => {
           ...basStyles[':hover'],
           borderColor:"#FF9100",
           borderRadius:10,
-          borderWidth:1
+
         }
       })
       ,dropdownIndicator:(styles,state)=>({

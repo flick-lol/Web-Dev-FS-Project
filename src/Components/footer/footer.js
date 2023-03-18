@@ -12,89 +12,71 @@ export function Footer() {
   return (
     <footer className="flex flex-column justify-content-center">
       <div className="flex flex-column text-center  justify-content-center  flex-sm-row m-sm-5">
-        <div class="text-block">
-          <h1>Meet our team</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perspiciatis, esse provident adipisci magni consequuntur quibusdam
-            sit reprehende.
-          </p>
+        <div className="flex flex-column">
+          <div class="text-block">
+            <h1>Meet our team</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Perspiciatis, esse provident adipisci magni consequuntur quibusdam
+              sit reprehende.
+            </p>
+
+          </div>
+          <button id="join"> Join our Events</button>
         </div>
 
         <Teamswiper></Teamswiper>
       </div>
 
-      <div className="wave-wrapper" >
-        <Wave
-          fill="#FF9100"
-          id="wave"
-          paused={false}
-          options={{
-            height: 20,
-            amplitude: 20,
-            speed: 0.15,
-            points: 10,
-          }}
-        />
-
-        <div class="social flex justify-content-center">
-          <a href="#">
-            <FontAwesomeIcon icon={faDiscord} size="2x" className="mx-5" />
-          </a>
-          <a href="https://www.instagram.com/skillntell.club/?hl=en">
-            <FontAwesomeIcon
-              icon={faInstagram}
-              size="2x"
-              className="mx-5"
-            ></FontAwesomeIcon>
-          </a>
-          <a href="https://www.linkedin.com/in/skill-and-tell-club-b5a051251/">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="2x"
-              className="mx-5"
-            ></FontAwesomeIcon>
-          </a>
-        </div>
-      </div>
+      <FooterWave pageName={"home"}></FooterWave>
     </footer>
   );
 }
 
-export const FooterWave = () => {
-    return (
-        <div className="wave-wrapper">
-            <Wave
-                fill="#FF9100"
-                id="wave"
-                paused={false}
-                options={{
-                    height: 20,
-                    amplitude: 20,
-                    speed: 0.15,
-                    points: 10,
-                }}
-            />
+export const FooterWave = ({ pageName }) => {
+  return (
+    <div className="wave-wrapper">
+      <Wave
+        fill="#FF9100"
+        id="wave"
+        paused={false}
+        options={{
+          height: 20,
+          amplitude: 20,
+          speed: 0.4,
+          points: 5,
+        }}
+      />
+      {/*<div className="flex flex-column">*/}
+      <div
+        className={`social flex justify-content-center ${
+          pageName === "event" ? "pt-5" : ""
+        } `}
+      >
+        <a href="https://discord.gg/SSQWgXTtHb" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faDiscord} size="2x" className="mx-5" />
+        </a>
+        <a href="https://www.instagram.com/skillntell.club/?hl=en" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon
+            icon={faInstagram}
+            size="2x"
+            className="mx-5"
+          ></FontAwesomeIcon>
+        </a>
+        <a href="https://www.linkedin.com/in/skill-and-tell-club-b5a051251/"  target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            size="2x"
+            className="mx-5"
+          ></FontAwesomeIcon>
+        </a>
+      </div>
+    </div>
+  );
 
-            <div className="social flex justify-content-center">
-                <a href="#">
-                    <FontAwesomeIcon icon={faDiscord} size="2x" className="mx-5"/>
-                </a>
-                <a href="https://www.instagram.com/skillntell.club/?hl=en">
-                    <FontAwesomeIcon
-                        icon={faInstagram}
-                        size="2x"
-                        className="mx-5"
-                    ></FontAwesomeIcon>
-                </a>
-                <a href="https://www.linkedin.com/in/skill-and-tell-club-b5a051251/">
-                    <FontAwesomeIcon
-                        icon={faLinkedin}
-                        size="2x"
-                        className="mx-5"
-                    ></FontAwesomeIcon>
-                </a>
-            </div>
-        </div>
-    )
-}
+  {
+    /*<div className="footer-paragraph">
+      <p>Copyright</p>
+      </div>*/
+  }
+};

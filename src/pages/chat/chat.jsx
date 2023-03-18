@@ -28,17 +28,15 @@ function ChatPage() {
           <div className="messages flex-column p-5">
             {messages.map((message, index) => (
               <>
-                <div className="message">
+                <div className="message message-received">
                   <div className="message-content">
                     <p>Hello! This is a received message.</p>
                   </div>
                 </div>
 
-                <div className="message message-sent">
+                <div className="message-sent">
                   <div className="message-content">
-                    <p>Hi! This is a sent message.And I want to thank you really haaaaaaaaaaaaaaaaaaaaaaaa  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                      even when text is long it's working really fine
-                      yayayayaaaaaaaaaaaaaaaaaaa
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                   </div>
                 </div>
