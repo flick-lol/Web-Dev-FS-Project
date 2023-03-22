@@ -94,6 +94,7 @@ button:hover {
   padding: 10px 15px;
   border-radius: 15px;
   max-width: 70%;
+  min-width: 70px;
   word-wrap: break-word;
   position: relative;
   color: white;

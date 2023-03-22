@@ -111,15 +111,19 @@ footer .slider .left-arrow:hover {
 
 }
 .wave-wrapper{
-  position: relative;
+  margin-top: 2%;
+  padding: 0px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 
  
 }
 #wave{
-  margin: 0px;
   position: absolute;
   left: 0;
-  top: 30;
+  
+  
 }
 path{
   width: 100%;

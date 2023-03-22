@@ -1,4 +1,3 @@
-import "./Home.css";
 
 import { NavBar } from "../../Components/NavBar/navbar";
 import { StarMain } from "../../Components/main/StarMain";

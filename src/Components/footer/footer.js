@@ -11,7 +11,7 @@ import "./footer.css";
 export function Footer() {
   return (
     <footer className="flex flex-column justify-content-center">
-      <div className="flex flex-column text-center  justify-content-center  flex-sm-row m-sm-5">
+      <div className="flex flex-col text-center justify-center md:flex-row">
         <div className="flex flex-column">
           <div class="text-block">
             <h1>Meet our team</h1>
