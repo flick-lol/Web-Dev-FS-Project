@@ -4,11 +4,16 @@ import React, { useState, useRef, useEffect } from "react";
 import "./chat.css";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { NavBar } from "../../Components/NavBar/navbar";
+
+import { sendMessage } from "./Controllers/GptContorller";
+import { messageBubble } from "./messageBubble";
 function ChatPage() {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
   // dummy var to cause useEffect to be called each time this variable changes
   // this variable is used to do the scolling behaviour after new messages arrive
+
+
   const [dummy, setDummy] = useState(0);
   const buttonRef = useRef(null);
   const inputRef = useRef(null);
@@ -40,13 +45,16 @@ function ChatPage() {
 
   const handleNewMessageChange = (event) => {
     setNewMessage(event.target.value);
+   
   };
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async() => {
     if (newMessage !== "") {
       const updatedMessages = [...messages, newMessage];
       setMessages(updatedMessages);
       setDummy((prev) => !prev);
+      // to call the chat gpt api
+      await sendMessage(newMessage);
       setNewMessage("");
     }
   };
@@ -54,32 +62,23 @@ function ChatPage() {
   return (
     <>
       <NavBar></NavBar>
-      <div className="chat-page flex w-100 mt-0">
+      <div className="chat-page flex flex-column w-100 mt-0 mx-0">
         {/*<div className="info-column flex-column"></div>*/}
         <div className="chat-column w-100 mx-0">
-          <div className="messages flex-column w-100 p-5" ref={scrollRef}>
+          <div className="messages flex-column" ref={scrollRef}>
             {messages.map((message) => (
-              <>
-                <div className="mt-10 message message-received">
-                  <div className="message-content">
-                    <p>Hello</p>
-                  </div>
-                </div>
-                <div className="flex flex-row-reverse">
-                  <div className="message-sent ">
-                    <div className="message-content">
-                      <p> {message} </p>
-                    </div>
-                  </div>
-                </div>
-              </>
+             messageBubble(message,true)
             ))}
           </div>
-          <div className="send-wrapper">
+       
+        </div>
+
+        <div />
+        <div className="send-wrapper mt-3">
             <input
               ref={inputRef}
               value={newMessage}
-              className="chat-input"
+              className="bg-violet"
               onChange={handleNewMessageChange}
               placeholder="text ..."
             />
@@ -92,9 +91,6 @@ function ChatPage() {
               <FontAwesomeIcon icon={faPaperPlane} color="#240046" />
             </button>
           </div>
-        </div>
-
-        <div />
       </div>
     </>
   );

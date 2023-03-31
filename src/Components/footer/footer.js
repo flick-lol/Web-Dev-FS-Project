@@ -43,8 +43,8 @@ export const FooterWave = ({ pageName }) => {
         options={{
           height: 20,
           amplitude: 20,
-          speed: 0.4,
-          points: 5,
+          speed: 0.1,
+          points: 2,
         }}
       />
       {/*<div className="flex flex-column">*/}
@@ -54,20 +54,20 @@ export const FooterWave = ({ pageName }) => {
         } `}
       >
         <a href="https://discord.gg/SSQWgXTtHb" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faDiscord} size="2x" className="mx-5" />
+          <FontAwesomeIcon icon={faDiscord} size="2x" className="mx-3 md:mx-5" />
         </a>
         <a href="https://www.instagram.com/skillntell.club/?hl=en" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faInstagram}
             size="2x"
-            className="mx-5"
+            className="mx-3 md:mx-5"
           ></FontAwesomeIcon>
         </a>
         <a href="https://www.linkedin.com/in/skill-and-tell-club-b5a051251/"  target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faLinkedin}
             size="2x"
-            className="mx-5"
+            className="mx-3 md:mx-5"
           ></FontAwesomeIcon>
         </a>
       </div>
