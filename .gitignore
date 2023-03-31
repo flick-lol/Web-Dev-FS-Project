@@ -27,5 +27,6 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify
-
+/Php/vendor
+/Php/.env
 .env
