@@ -4,7 +4,6 @@ import logoOnly from "../../assets/sntLogoOnly.png";
 import {
   MDBBtn,
   MDBContainer,
-  MDBRow,
   MDBCol,
   MDBInput,
   MDBCard,
@@ -20,12 +19,12 @@ export function Register() {
   return (
     <div className="no-scroll">
       <NavBar></NavBar>
-      <form >
+      <form>
         <MDBContainer className="my-5 gradient-form">
           <MDBCard className="my-5" style={{ borderRadius: "4rem" }}>
-            <MDBRow>
+            <div className="flex flex-col md:flex-row">
               <MDBCol col="6" className="mb-5">
-                <div className="d-flex flex-column ms-5 px-4">
+                <div className="d-flex flex-column ms-5 pr-10">
                   <div className="text-center centeredLogo mt-5">
                     <img
                       src={logoOnly}
@@ -35,12 +34,14 @@ export function Register() {
                   </div>
 
                   <p>Please Enter your information</p>
+
                   <MDBInput
                     className="mb-1"
                     label="First Name"
                     id="typeText"
                     type="text"
                     wrapperClass="mb-4"
+                    required
                   />
                   <MDBInput
                     className="mb-1"
@@ -81,10 +82,12 @@ export function Register() {
               </MDBCol>
 
               <MDBCol col="6" className="w-100">
-                <div className="d-flex flex-column  justify-content-center gradient-custom-2 h-100 mb-4">
-                  <div className="text-white px-3 py-4 p-md-5 mx-md-4">
-                    <h4 class="mb-4">We are more than just a Community</h4>
-                    <p class="small mb-0">
+                <div className="d-flex flex-column  rounded-full justify-content-center gradient-custom-2 h-100 mb-4">
+                  <div className="text-white px-3 py-4 p-md-5 mx-md-4 ">
+                    <h4 className="mb-4 mx-4">
+                      We are more than just a Community
+                    </h4>
+                    <p className="mb-0 mx-4">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -93,7 +96,7 @@ export function Register() {
                   </div>
                 </div>
               </MDBCol>
-            </MDBRow>
+            </div>
           </MDBCard>
         </MDBContainer>
       </form>
